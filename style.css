@@ -8,6 +8,25 @@ body {
     background: #fafafa;
 }
 
+#page-name {
+    font-family: "Archivo Narrow";
+}
+
+#self-mw {
+    font-family: "Archivo Narrow"
+}
+
+#content-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    grid-gap: 3px;
+}
+
+.footer {
+    grid-column: 1 / -1;
+}
+
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
