@@ -18,10 +18,18 @@ body {
 
 #content-body {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-auto-rows: 75px;
+    grid-auto-columns: 100px;
+    grid-auto-rows: 100px;
     grid-gap: 10px;
     grid-auto-flow: dense;
+}
+
+.sidebarCollapse {
+    background-color: white;
+}
+
+.jumbotron {
+    background-color: white;
 }
 
 .horizontal {
@@ -206,6 +214,9 @@ a.article:hover {
     }
 }
 
+body {
+    background-color: white;
+}
 
 /* ---------------------------------------------------
     Custom Styles
