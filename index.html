@@ -21,66 +21,64 @@
 </head>
 
 <body>
-    <div id="wrapper" class="toggled">
-        <!-- Sidebar  -->
-        <div class="sidebar-header">
-                <h3>MW</h3>
-        </div>
-        <nav id="sidebar">
-            
+    <div id="outer-element">
+        <div id="fixed-sidebar">
+            <div class="sidebar-header">
+                <button type="button" id="sidebarCollapse">
+                    <i class="fa fa-bars"></i>
+                    <span>MW</span>
+                </button>
+            </div> <!-- end of side bar header  -->
 
-            <ul class="list-unstyled components">
-                <p>My Service</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
+            <div id="wrapper" class="toggled">
+                <!-- Sidebar  -->
+                <nav id="sidebar">
+                    <ul class="list-unstyled components">
+                        <p>My Service</p>
+                        <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                            <ul class="collapse list-unstyled" id="homeSubmenu">
+                                <li>
+                                    <a href="#">Home 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home 3</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#">Home 2</a>
+                            <a href="#">About</a>
                         </li>
                         <li>
-                            <a href="#">Home 3</a>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li>
+                                    <a href="#">Page 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Page 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+            </div> <!-- end of wrapper -->
+        </div> <!--end of fixed side bar-->
 
         <!-- Page Content  -->
         <div id="content">
-
-
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-                <i class="fas fa-bars"></i>
-                <span>Menu</span>
-            </button>
-
-
             <div class="jumbotron jumbotron-fluid">
                     <div class="container" id="jumbo">
                         <h1 id="page-name" class="display-4">Micheal Wong</h1>
@@ -94,10 +92,16 @@
                     <img src="Images/2.jpg" alt="Second" class="slide" />
                     <img src="Images/3.jpg" alt="Third" class="slide" />
                 </div>
-            </div>	
+            </div> <!-- end of slider -->	
 
-        </div>
-    </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quaerat excepturi aut laborum quia eveniet dolorem explicabo harum ad, iure temporibus incidunt blanditiis cum voluptatem laboriosam saepe repudiandae non quo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quaerat excepturi aut laborum quia eveniet dolorem explicabo harum ad, iure temporibus incidunt blanditiis cum voluptatem laboriosam saepe repudiandae non quo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quaerat excepturi aut laborum quia eveniet dolorem explicabo harum ad, iure temporibus incidunt blanditiis cum voluptatem laboriosam saepe repudiandae non quo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quaerat excepturi aut laborum quia eveniet dolorem explicabo harum ad, iure temporibus incidunt blanditiis cum voluptatem laboriosam saepe repudiandae non quo?</p>
+
+        </div> <!--end of content-->
+    </div> <!--end of outer element-->
+    
 
     
 

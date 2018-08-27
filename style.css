@@ -24,9 +24,6 @@ body {
     grid-auto-flow: dense;
 }
 
-.sidebarCollapse {
-    background-color: white;
-}
 
 .jumbotron {
     background-color: white;
@@ -92,13 +89,33 @@ a:focus {
 ----------------------------------------------------- */
 
 #wrapper {
-    display: flex;
+    display: inline-flex;
     width: 100%;
     align-items: stretch;
 }
 
+#outer-element {
+    display: inline-flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#fixed-sidebar {
+    position:fixed;
+    top: 0px;
+}
+
 #sidebarCollapse {
     background: #000000;
+    color: white;
+    width: 100px;
+    height: 50px;
+    text-align: left;
+    float: left;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    padding-right: 5px;
 }
 
 #sidebar {
@@ -114,14 +131,16 @@ a:focus {
     margin-left: 0;
 }
 
-#sidebar .sidebar-header {
+#sidebar-header {
     padding: 20px;
-    background: #000000;
+    margin-left: 0;
+    min-width: 100px;
+    max-width: 100px;
 }
+
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
 }
 
 #sidebar ul p {
@@ -208,9 +227,6 @@ a.article:hover {
     }
     #sidebar.active {
         margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
     }
 }
 
